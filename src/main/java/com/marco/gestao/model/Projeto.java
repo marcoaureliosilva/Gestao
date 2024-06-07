@@ -20,18 +20,14 @@ public class Projeto {
     @JoinColumn(name = "idStatus", nullable = false)
     private Status status;
 
-    @OneToMany(mappedBy = "projeto")
-    private List<Atividade> atividades;
-
     public Projeto(){}
 
-    public Projeto(Long id, String titulo, String descricao, Cliente cliente, Status status, List<Atividade> atividades) {
+    public Projeto(Long id, String titulo, String descricao, Cliente cliente, Status status) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
         this.cliente = cliente;
         this.status = status;
-        this.atividades = atividades;
     }
 
     public Long getId() {
@@ -72,13 +68,5 @@ public class Projeto {
 
     public void setStatus(Status status) {
         this.status = status;
-    }
-
-    public List<Atividade> getAtividades() {
-        return atividades;
-    }
-
-    public void setAtividades(List<Atividade> atividades) {
-        this.atividades = atividades;
     }
 }

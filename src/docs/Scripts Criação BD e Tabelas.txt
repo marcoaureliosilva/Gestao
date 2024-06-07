@@ -1,29 +1,3 @@
-# Projeto de Gestão de Projetos
-
-Este é um projeto BACKEND para fornecer as API's para cadastro, consulta e manutenção de um software de controle de gestão de projetos.
-Foi desenvolvido em Java 17, utilizando o gerenciador de dependências Maven, persistência em Postgresql e a estrutura de testes JUnit.
-
-## Funcionalidades
-
-- Existe a possibilidade de inclusão, alteração, exclusão, consulta por ID e listagem geral dos cadastros de Time, Participante, Status, Cliente, Projeto e Atividades.
-- Além de com relação ao projeto, listar todos os projetos em aberto e listar também as atividades de cada projeto.
-- Para acessar todas as funcionalidades disponíveis e seus parâmetros após subir o projeto basta acessar o endereço http://localhost:8080/swagger-ui/index.html#
-
-## Diagrama de Classes
-
-## Requisitos
-
-- Java 17
-- Maven
-- Postgresql
-
-
-# Autor
-
-Marco Aurélio da Silva
-
-https://www.linkedin.com/in/maraureliosilva
-
 # Script para criação do banco de dados e tabelas
 ```
 CREATE DATABASE "apiGestao"
