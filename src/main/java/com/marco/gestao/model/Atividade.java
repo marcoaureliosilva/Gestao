@@ -18,16 +18,20 @@ public class Atividade {
     private Long tamanho;
     @Column(nullable = false)
     private Boolean finalizada;
+    @ManyToOne
+    @JoinColumn(name = "idParticipante")
+    private Participante participante;
 
     public Atividade(){}
 
-    public Atividade(Long id, String atividade, String descricao, Projeto projeto, Long tamanho, Boolean finalizada) {
+    public Atividade(Long id, String atividade, String descricao, Projeto projeto, Long tamanho, Boolean finalizada, Participante participante) {
         this.id = id;
         this.atividade = atividade;
         this.descricao = descricao;
         this.projeto = projeto;
         this.tamanho = tamanho;
         this.finalizada = finalizada;
+        this.participante = participante;
     }
 
     public Long getId() {
@@ -76,5 +80,13 @@ public class Atividade {
 
     public void setFinalizada(Boolean finalizada) {
         this.finalizada = finalizada;
+    }
+
+    public Participante getParticipante() {
+        return participante;
+    }
+
+    public void setParticipante(Participante participante) {
+        this.participante = participante;
     }
 }

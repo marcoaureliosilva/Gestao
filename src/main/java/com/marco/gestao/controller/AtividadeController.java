@@ -41,6 +41,7 @@ public class AtividadeController {
             atividade.setDescricao(param.getDescricao());
             atividade.setProjeto(param.getProjeto());
             atividade.setTamanho(param.getTamanho());
+            atividade.setParticipante(param.getParticipante());
             Atividade retorno = atividadeService.save(atividade);
             return ResponseEntity.ok(retorno);
         } else {
