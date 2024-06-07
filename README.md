@@ -10,7 +10,7 @@ Foi desenvolvido em Java 17, utilizando o gerenciador de dependências Maven, pe
 - Para acessar todas as funcionalidades disponíveis e seus parâmetros após subir o projeto basta acessar o endereço http://localhost:8080/swagger-ui/index.html#
 
 ## Diagrama de Classes
-
+![Gestão de Projetos](docs/Diagrama.png)
 ## Requisitos
 
 - Java 17
